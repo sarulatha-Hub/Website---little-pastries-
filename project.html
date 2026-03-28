@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BMI Calculation</title>
+  
+  <!-- Internal CSS -->
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to right, #74ebd5, #ACB6E5);
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+
+    h1 {
+      color: #2c3e50;
+      margin-top: 50px;
+      text-shadow: 1px 1px 2px #fff;
+    }
+
+    label {
+      font-size: 18px;
+    }
+
+    input[type="text"] {
+      padding: 8px;
+      width: 150px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      font-size: 16px;
+      margin-left: 10px;
+    }
+
+    input[type="button"] {
+      background-color: #2c3e50;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+      margin-top: 15px;
+      transition: background-color 0.3s;
+    }
+
+    input[type="button"]:hover {
+      background-color: #34495e;
+    }
+
+    center {
+      margin-top: 100px;
+      background: rgba(255, 255, 255, 0.8);
+      padding: 40px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      width: 350px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  </style>
+</head>
+
+<body>
+  <center>
+    <h1>BMI CALCULATION</h1>
+    <label>Weight (kg): <input type="number" id="weight"></label><br><br>
+    <label>Height (cm): <input type="number" id="height"></label><br><br>
+    <input type="button" value="Calculate BMI" onclick="calculateBmi()"><br>
+    <p id="result"></p>
+    <h1>result</h1>
+  </center>
+
+  <script src="project.js"></script>
+</body>
+</html>
